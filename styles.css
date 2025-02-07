@@ -123,3 +123,18 @@ body {
         width: 90%;
     }
 }
+.reset-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.reset-button:hover {
+    background-color: #0056b3;
+}

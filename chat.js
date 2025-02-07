@@ -42,5 +42,11 @@ document.getElementById("user-input").addEventListener("keypress", function(even
         event.preventDefault();  // Prevent default form submission
         sendMessage();  // Call sendMessage function
     }
+    
 });
+function resetChat() {
+    let chatBox = document.getElementById("chat-box");
+    chatBox.innerHTML = `<div class="message bot-message"><strong>Bot:</strong> Hi! Tell me about your symptoms, and I'll try to help.</div>`;
+}
+
 
