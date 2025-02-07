@@ -189,7 +189,6 @@ PySocks==1.7.1
 python-dateutil==2.8.2
 python-json-logger==2.0.7
 pytz==2023.3.post1
-pywin32==306
 pywinpty==2.0.12
 pywsd==1.2.5
 PyYAML==6.0.1
