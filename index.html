@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Chatbot - Your Virtual Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='chat.js') }}" defer></script>
+</head>
+<body>
+    <div class="chat-container">
+        <h1 class="chat-title">Health Chatbot 🤖</h1>
+        <p class="chat-subtitle">Tell me your symptoms, and I'll try to assist you!</p>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message"><strong>Bot:</strong> Hi! Tell me about your symptoms, and I'll try to help.</div>
+        </div>
+        <div class="input-box">
+            <input type="text" id="user-input" placeholder="Enter symptoms..." onkeyup="showSuggestions(this.value)">
+            <div id="suggestions" class="suggestions-box"></div>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+const symptomsList = ["fever", "headache", "cough", "fatigue", "nausea", "dizziness", "sore throat", "chills", "body ache", "shortness of breath"];
+
+function showSuggestions(input) {
+    let suggestionsBox = document.getElementById("suggestions");
+    suggestionsBox.innerHTML = "";
+    if (input.length === 0) return;
+    let filteredSymptoms = symptomsList.filter(symptom => symptom.toLowerCase().startsWith(input.toLowerCase()));
+    filteredSymptoms.forEach(symptom => {
+        let suggestionItem = document.createElement("div");
+        suggestionItem.innerText = symptom;
+        suggestionItem.onclick = () => selectSymptom(symptom);
+        suggestionsBox.appendChild(suggestionItem);
+    });
+}
+
+function selectSymptom(symptom) {
+    document.getElementById("user-input").value = symptom;
+    document.getElementById("suggestions").innerHTML = "";
+}
+</script>
