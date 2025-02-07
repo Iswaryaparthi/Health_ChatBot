@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    margin: 0;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 420px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Chat Box */
+.chat-box {
+    height: 320px;
+    overflow-y: auto;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    scroll-behavior: smooth;
+}
+
+/* Chat Messages */
+.message {
+    padding: 10px 14px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-width: 75%;
+    word-wrap: break-word;
+    display: inline-block;
+    font-size: 15px;
+}
+
+/* User Message */
+.user-message {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+}
+
+/* Bot Message */
+.bot-message {
+    background: #e3f2fd;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+}
+
+/* Input Box */
+.input-box {
+    display: flex;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #ddd;
+}
+
+/* Input Field */
+.input-box input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input Field Focus */
+.input-box input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+/* Send Button */
+.input-box button {
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+/* Send Button Hover */
+.input-box button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Smooth Scroll for Messages */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 3px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 450px) {
+    .chat-container {
+        width: 90%;
+    }
+}
