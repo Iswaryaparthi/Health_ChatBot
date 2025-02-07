@@ -36,11 +36,11 @@ cycler==0.12.1
 cymem==2.0.11
 dash==2.14.2
 dash-bootstrap-components==1.3.1
+dash_colorscales==0.0.4
 dash-core-components==2.0.0
+dash_daq==0.5.0
 dash-html-components==2.0.0
 dash-table==5.0.0
-dash_colorscales==0.0.4
-dash_daq==0.5.0
 debugpy==1.8.0
 decorator==5.1.1
 defusedxml==0.7.1
@@ -49,8 +49,8 @@ dnspython==2.4.2
 docopt==0.6.2
 dtale==3.9.0
 easy-ocr==0.1.1
-en_core_sci_sm @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.4/en_core_sci_sm-0.2.4.tar.gz#sha256=d4d5c5048b69ca79ce083b254f95c0c951d108d427fad0b32cc8847fe4ed25a0
-en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85
+en_core_sci_sm==0.2.4
+en_core_web_sm==3.8.0
 et-xmlfile==1.1.0
 executing==2.0.0
 Faker==33.1.0
@@ -104,17 +104,17 @@ jsonpointer==2.4
 jsonschema==4.19.1
 jsonschema-specifications==2023.7.1
 jupyter==1.0.0
+jupyter_client==8.4.0
 jupyter-console==6.6.3
+jupyter_core==5.4.0
 jupyter-events==0.7.0
 jupyter-lsp==2.2.0
-jupyter_client==8.4.0
-jupyter_core==5.4.0
 jupyter_server==2.7.3
 jupyter_server_terminals==0.4.4
 jupyterlab==4.0.7
 jupyterlab-pygments==0.2.2
-jupyterlab-widgets==3.0.9
 jupyterlab_server==2.25.0
+jupyterlab-widgets==3.0.9
 kaleido==0.2.1
 keras==3.8.0
 kiwisolver==1.4.5
@@ -160,6 +160,7 @@ parso==0.8.3
 patsy==0.5.6
 pickleshare==0.7.5
 Pillow==10.1.0
+pip==24.0
 pipreqs==0.5.0
 platformdirs==3.11.0
 plotly==5.18.0
@@ -189,6 +190,7 @@ PySocks==1.7.1
 python-dateutil==2.8.2
 python-json-logger==2.0.7
 pytz==2023.3.post1
+pywin32==306
 pywinpty==2.0.12
 pywsd==1.2.5
 PyYAML==6.0.1
