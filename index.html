@@ -14,6 +14,9 @@
         <div class="chat-box" id="chat-box">
             <div class="message bot-message"><strong>Bot:</strong> Hi! Tell me about your symptoms, and I'll try to help.</div>
         </div>
+         <!-- Reset Chat Button -->
+         <button onclick="resetChat()" class="reset-button">Reset Chat</button>
+         
         <div class="input-box">
             <input type="text" id="user-input" placeholder="Enter symptoms..." onkeyup="showSuggestions(this.value)">
             <div id="suggestions" class="suggestions-box"></div>
